@@ -1,0 +1,7 @@
+<section style="padding-bottom: 8px;" *ngFor="let post of todosRemoto | async">
+  <div style="border: solid;">
+    <h2>Id: {{post.id}}</h2>
+    <h2>Title: {{post.title}}</h2>
+    <h2>Completed: {{post.completed}}</h2>
+  </div>
+</section>

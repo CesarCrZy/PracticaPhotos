@@ -1,0 +1,18 @@
+<section style="padding-bottom: 8px;" *ngFor="let post of usersRemoto | async">
+  <div style="border: solid;">
+    <h2>Name: {{post.name}}</h2>
+    <h2>Username: {{post.username}}</h2>
+    <h2>Email: {{post.email}}</h2>
+    <h2>Street: {{post.address.street}}</h2>
+    <h2>Suite: {{post.address.suite}}</h2>
+    <h2>City: {{post.address.city}}</h2>
+    <h2>Zipcode: {{post.address.zipcode}}</h2>
+    <h2>Lat: {{post.address.geo.lat}}</h2>
+    <h2>Lng: {{post.address.geo.lng}}</h2>
+    <h2>Phone: {{post.phone}}</h2>
+    <h2>Website: {{post.website}}</h2>
+    <h2>Company: {{post.company.name}}</h2>
+    <h2>Phrase: {{post.company.catchPhrase}}</h2>
+    <h2>Bs: {{post.company.bs}}</h2>
+  </div>
+</section>
